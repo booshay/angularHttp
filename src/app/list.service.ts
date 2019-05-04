@@ -8,10 +8,10 @@ import {Observable} from 'rxjs';
 })
 export class ListService {
   //private _url: string = 'assets/data/data.json';
-   private _url: string ='https://jsonplaceholder.typicode.com/todos/1';
+   private _url = 'https://jsonplaceholder.typicode.com/todos/1';
   constructor(private http: HttpClient) { }
-  
-  getData(): Observable<IData[]>{
+
+  getData(): Observable<IData[]> {
     return this.http.get<IData[]>(this._url);
   }
 }

@@ -7,7 +7,7 @@ import {ListService} from '../list.service';
   styleUrls: ['./list.component.css']
 })
 export class ListComponent implements OnInit {
- public list=[];
+ public list = [];
   constructor(private _listService: ListService) { }
 
   ngOnInit() {
